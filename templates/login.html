@@ -1,0 +1,54 @@
+<html>
+
+<head>
+    <title>Student record</title>
+</head>
+<body>
+        <li class="active"><a href="/">Home</a></li>
+         <li><a href="/rec1">view</a></li>
+         <li><a href="/sef1">search</a></li>
+        <li><a href="/stud">add</a></li>
+	 <li><a href="/del">delete</a></li>
+
+<div class= 'container'>
+<form class="navbar-form navbar-left" role="search">
+  <div class="form-group">
+    <input type="text" class="form-control" placeholder="Search">
+  </div>
+  <button type="submit" class="btn btn-default">Submit</button>
+</form>
+<div align='center'>
+<div class="jumbotron">
+
+<h1><em><code>Please login</code></em></h1>
+<br>
+<form action='/' method="post">
+  <input type="text" placeholder="Username" name="username" value="{{request.form.username }}">
+  <input type="password" placeholder="Password" name="password" value="{{request.form.password }}">
+  <input class="btn btn-default" type="submit" value="Login">
+</form>
+
+{% for message in get_flashed_messages() %}
+{{message}}
+{% endfor %}
+
+{% if error %}
+ <p class="error"> <strong> Error:</strong> {{error}}</p>
+{% endif %}
+</div>
+</div>
+</div>
+
+
+
+
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+ <script text="javascript"!>
+document.body.style.backgroundImage="url('static/gec.jpg')";
+ </script>
+
+</body>
+</html>

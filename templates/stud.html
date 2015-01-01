@@ -1,0 +1,56 @@
+
+{% block body %}
+<HEAD>
+ <TITLE> <b>Add details</b> </TITLE>
+ </HEAD>     
+
+ <BODY>
+          <li class="active"><a href="home">Home</a></li>
+          <li><a href="/rec">view</a></li>
+          <li><a href="/sef">search</a></li>
+          <li><a href="/stud">add</a></li>
+          <li><a href="/del">delete</a></li>          
+           
+  
+  
+ <FORM method="post" action="/add">
+ <div id = "container">
+ <div align = "center">
+ <H1>Student details</H1>
+
+ <BR>NAME: <INPUT TYPE="text" NAME="name" ></BR>
+ <BR>MARK1: <INPUT TYPE="text" NAME="mark1" ></BR>
+
+ <BR>MARK2<INPUT TYPE="text" NAME="mark2" ><BR>
+
+ <br>TOTAL:<INPUT TYPE="text" NAME="total"></br>
+
+ <BR>GRADE:<INPUT TYPE="text" NAME="grade" ></BR>
+
+ <INPUT TYPE="submit">
+</div>
+ </div>
+ </FORM>
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+ <script text="javascript">
+document.body.style.backgroundImage="url('static/44.jpg')";
+ </script>
+
+ </BODY>
+
+ </HTML>
+
+
+
+
+
+
+
+
+
+
+
+{% endblock %}
+
